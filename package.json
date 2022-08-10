@@ -1,5 +1,6 @@
 {
-  "name": "common-ui",
+  "name": "vue3-template",
+  "author": "薛定谔的猫猫虫",
   "private": true,
   "version": "0.0.0",
   "type": "module",

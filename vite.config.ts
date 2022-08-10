@@ -32,7 +32,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     // 打包构建配置
     build: {
       target: "es2015", // 设置最终构建的浏览器兼容目标。
-      minify: "esbuild", // 禁用最小化混淆，或是用来指定使用哪种混淆器。
+      // minify: "esbuild", // 禁用最小化混淆，或是用来指定使用哪种混淆器。默认esbuild
       terserOptions: {
         compress: {
           keep_infinity: true,
