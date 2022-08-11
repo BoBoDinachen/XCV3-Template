@@ -15,10 +15,11 @@
     "baseUrl": "./",
     "paths": {
       "~": ["src"],
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@config/*": ["config/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts","types/**/*.ts"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

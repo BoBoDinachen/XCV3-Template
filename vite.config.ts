@@ -2,7 +2,7 @@ import { ConfigEnv, UserConfig } from 'vite';
 import {resolve} from 'path';
 import { createVitePlugins } from './config/plugins/index';
 import { proxyList } from './config/constant/proxy';
-import { VITE_PORT, VITE_BUILD_DROP_CONSOLE } from './config/constant/index';
+import { VITE_PORT, VITE_BUILD_DROP_CONSOLE } from './config/constant/settings';
 
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv): UserConfig => {
@@ -19,6 +19,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           find: '~',
           replacement: resolve(__dirname,"./src"),
         },
+        {
+          find: "@config",
+          replacement: resolve(__dirname,"./config")
+        }
       ],
       extensions: [".ts",".tsx"]
     },
