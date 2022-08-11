@@ -19,4 +19,4 @@ export const TokenKey = 'test-token';
 export const TokenPrefix = 'Bearer ';
 
 // 是否在打包时删除 console 代码
-export const VITE_BUILD_DROP_CONSOLE = false
+export const VITE_BUILD_DROP_CONSOLE = false;
