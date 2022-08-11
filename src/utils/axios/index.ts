@@ -2,7 +2,7 @@ import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { showMessage } from './status';
 import { IResponse } from '../result';
 import { getToken } from '../auth';
-import { TokenPrefix, API_TARGET_URL } from '../../../config/constant/index';
+import { TokenPrefix, API_TARGET_URL } from '@config/constant/settings';
 
 // 如果请求时间了超过 `timeout` 的时间，请求将被中断
 axios.defaults.timeout = 5000;

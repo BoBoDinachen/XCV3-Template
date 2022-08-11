@@ -1,5 +1,5 @@
 import { ProxyOptions } from 'vite';
-import { API_BASE_URL, API_TARGET_URL } from '../../config/constant';
+import { API_BASE_URL, API_TARGET_URL } from './settings';
 
 type ProxyTargetList = Record<string, ProxyOptions>;
 

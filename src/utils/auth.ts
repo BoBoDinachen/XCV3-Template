@@ -1,4 +1,4 @@
-import { TokenKey, TokenPrefix } from '../../config/constant/index';
+import { TokenKey, TokenPrefix } from '@config/constant/settings';
 
 // 用于判断是否登录
 const isLogin = () => {

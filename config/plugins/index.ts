@@ -15,7 +15,7 @@ export function createVitePlugins(isBuild: boolean) {
     vueJsx(),
   ];
   // 可自定义进行扩展vite插件  vitePlugins.push(...)
-  vitePlugins.push(ConfigProgressPlugin);
+  vitePlugins.push(ConfigProgressPlugin());
 
   return vitePlugins;
 }
