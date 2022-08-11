@@ -1,6 +1,7 @@
-import { PluginOption } from "vite";
-import vue from "@vitejs/plugin-vue";
-import vueJsx from "@vitejs/plugin-vue-jsx";
+import { PluginOption } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import { ConfigProgressPlugin } from './progress';
 
 /**
  * vite插件配置
@@ -11,9 +12,10 @@ export function createVitePlugins(isBuild: boolean) {
     // vue支持
     vue(),
     // JSX支持
-    vueJsx()
+    vueJsx(),
   ];
   // 可自定义进行扩展vite插件  vitePlugins.push(...)
+  vitePlugins.push(ConfigProgressPlugin);
 
   return vitePlugins;
 }
